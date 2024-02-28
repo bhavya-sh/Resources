@@ -1,0 +1,15 @@
+Guide to Installing LAMP Stack on AWS RHEL 9 EC2 Instance
+
+1. Use SSH to connect to your instance
+2. sudo yum update
+3. sudo yum install httpd -y
+4. systemctl status httpd
+     -- If httpd status is disabled, then:
+          sudo systemctl enable httpd
+     -- If httpd status is inactive, then:
+		  sudo systemctl start httpd
+           
+5. Verify Apache Installation:
+   Open a web browser and enter the following URL : <public IP of your EC2 instance>:80
+	If all is well , You can see a ###redhat linux test page
+
